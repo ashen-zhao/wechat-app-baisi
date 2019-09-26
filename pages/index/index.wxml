@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="nav-container">
+  <view class="nav-btn">
+    <nav-btn class="{{currentNav == index ? 'nav-btn active' : 'nav-btn unactive'}}" wx:for="{{menuList}}" wx:key="item" bindtap="menuClick" data-index="{{index}}" showLine="{{currentNav == index}}">
+      {{item}}
+    </nav-btn>
+  </view>
+</view>
+<scroll-view class="list-container" scroll-y="false">
+<block wx:for="{{dataSource}}" wx:key="item">
+  <view class="list">
+    <view class="user-header">
+      <view class="user-header-left">
+        <image src="{{item.u.header[0]}}">
+        </image>
+      </view>
+      <view class="user-header-right">
+        <text class="user-name">{{item.u.name}}</text>
+        <text class="release-time">{{item.passtime}}</text>
+      </view>
+    </view>
+
+    <view class="content">
+      <text>{{item.text}}</text>
+    </view>
+    <view class="divider"></view>
+  </view>
+</block>
+</scroll-view>

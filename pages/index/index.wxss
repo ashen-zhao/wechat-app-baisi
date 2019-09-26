@@ -1,0 +1,108 @@
+/**index.wxss**/
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  background: #298de5;
+  height: 80rpx;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:999;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #8ccefd;
+  /* background: #298de5; */
+  border-radius: 0;
+  font-size: 15px;
+  width: 100%;
+  justify-content:space-evenly;
+}
+
+.nav-btn .unactive {
+  width: 25%;
+}
+
+.nav-btn .active {
+  width: 25%;
+  color: #fff;
+}
+
+.nav-line {
+  height: 6rpx;
+  width: 20%;
+  background:white;
+}
+
+.nav-btn::after {
+  border-radius: 0;
+  border: none;
+}
+
+.list-container {
+  background: #f5f5f5;
+  margin-top: 80rpx;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.user-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.user-header-left {
+  width: 150rpx;
+  text-align: center;
+}
+
+.user-header-left image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.user-header-right {
+  display: flex;
+  height: 100rpx;
+  flex-direction: column;
+}
+
+.user-name {
+  height: 70rpx;
+  color: #444;
+  font-size: 38rpx;
+}
+
+.release-time {
+  margin-bottom: 6rpx;
+  height: 30rpx;
+  color: #555;
+  font-size: 30rpx;
+}
+
+.content {
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+  color: #333;
+  font-size: 34rpx;
+}
+
+.divider {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f5f5f5;
+}

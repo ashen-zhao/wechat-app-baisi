@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#298DE5",
+    "navigationBarTitleText": "小娱乐",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json"
+}

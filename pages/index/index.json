@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-btn":"../../components/navbtn/index"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":100
+}

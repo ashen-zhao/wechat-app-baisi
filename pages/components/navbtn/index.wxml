@@ -1,0 +1,5 @@
+<!--pages/components/navbtn/index.wxml-->
+<view class="container">
+<slot></slot>
+<view class="line" hidden="{{!showLine}}"> </view>
+</view>
